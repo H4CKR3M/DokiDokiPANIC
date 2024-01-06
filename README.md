@@ -1,5 +1,5 @@
 <div align="center">
-  <picture><img alt="Doki Doki: PANIC!!" src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/Exx9AJ.png"></picture>
+  <picture><img alt="Doki Doki: NIGHTRAIN" src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/Exx9AJ2.png"></picture>
   <h1><a href="https://h4ckr3m.github.io/NIGHTRAIN/">DOWNLOAD</a></h1>
 </div>
 
