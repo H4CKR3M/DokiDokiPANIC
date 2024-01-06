@@ -1,17 +1,17 @@
 <div align="center">
-  <picture><img alt="Doki Doki: PANIC!!" src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/Exx9AJ.png"></picture>
-  <h1><a href="https://h4ckr3m.github.io/DokiDokiPANIC/">DOWNLOAD</a></h1>
+  <picture><img alt="Doki Doki: PANIC!!" src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/Exx9AJ.png"></picture>
+  <h1><a href="https://h4ckr3m.github.io/NIGHTRAIN/">DOWNLOAD</a></h1>
 </div>
 
 <div>
-  <p><picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/rySsb1.png" loading="lazy"></picture><br></p>
-  <p><picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/haNWZ7.png" loading="lazy"></picture><br></p>
+  <p><picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/rySsb1.png" loading="lazy"></picture><br></p>
+  <p><picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/haNWZ7.png" loading="lazy"></picture><br></p>
   <p></p>
-  <p><picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/bMr26N.png" loading="lazy"></picture>&nbsp;&nbsp;Original Story<br></p>
-  <p><picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/bMr26N.png" loading="lazy"></picture>&nbsp;&nbsp;Nu Metal</p>
-  <p><picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/bMr26N.png" loading="lazy"></picture>&nbsp; Custom CGs <em>(courtesy of <a href="https://www.reddit.com/user/Proxyl_" referrerpolicy="origin" rel="nofollow noopener">Prox</a>,&nbsp;<a href="https://www.pixiv.net/en/users/61706834" referrerpolicy="origin" rel="nofollow noopener">みー太郎</a>,&nbsp;and&nbsp;<a href="https://www.pixiv.net/en/users/71432148" referrerpolicy="origin" rel="nofollow noopener">ウラ</a>&nbsp;)</em></p>
-  <p><picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/bMr26N.png" loading="lazy"></picture>&nbsp;&nbsp;<em>Skeuomorphic!</em></p>
-  <p><picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/bMr26N.png" loading="lazy"></picture>&nbsp;&nbsp;Don't go out after dark.</p>
+  <p><picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/bMr26N.png" loading="lazy"></picture>&nbsp;&nbsp;Original Story<br></p>
+  <p><picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/bMr26N.png" loading="lazy"></picture>&nbsp;&nbsp;Nu Metal</p>
+  <p><picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/bMr26N.png" loading="lazy"></picture>&nbsp; Custom CGs <em>(courtesy of <a href="https://www.reddit.com/user/Proxyl_" referrerpolicy="origin" rel="nofollow noopener">Prox</a>,&nbsp;<a href="https://www.pixiv.net/en/users/61706834" referrerpolicy="origin" rel="nofollow noopener">みー太郎</a>,&nbsp;and&nbsp;<a href="https://www.pixiv.net/en/users/71432148" referrerpolicy="origin" rel="nofollow noopener">ウラ</a>&nbsp;)</em></p>
+  <p><picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/bMr26N.png" loading="lazy"></picture>&nbsp;&nbsp;<em>Skeuomorphic!</em></p>
+  <p><picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/bMr26N.png" loading="lazy"></picture>&nbsp;&nbsp;Don't go out after dark.</p>
   <p><br></p>
   <p>Installation:</p>
     <ol>
@@ -24,10 +24,10 @@
 </div>
 
 <div>
-  <picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/dM_wUX.jpg"></picture>
-  <picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/McPI7R.jpg"></picture>
-  <picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/zxn_nR.jpg"></picture>
-  <picture><img src="https://h4ckr3m.github.io/DokiDokiPANIC/web_files/0w8d+4.jpg"></picture>
+  <picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/dM_wUX.jpg"></picture>
+  <picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/McPI7R.jpg"></picture>
+  <picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/zxn_nR.jpg"></picture>
+  <picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/0w8d+4.jpg"></picture>
 </div>
 
-### Download from the Official Website [HERE](https://H4CKR3M.github.io/DokiDokiPANIC/)
+### Download from the Official Website [HERE](https://h4ckr3m.github.io/NIGHTRAIN/)
