@@ -12,6 +12,8 @@ label rhythm_game_loop:
     $ renpy.checkpoint()
     $ renpy.block_rollback()
 
+    $ config.mouse_hide_time = None
+
     if persistent.rhythm_dark:
         scene bgrhythm arcade_dark
     else:
@@ -377,6 +379,9 @@ init python:
                     self.vy = vy
                     self.loop_dist = loop_dist
 
+                    # 120 fps only if the monitor supports it, else use 60 fps
+                    self.frame_time = 0.0083333 if renpy.get_refresh_rate() >= 115 else 0.0166666
+
                     self.drawables = [
                         self.image,
                     ]
@@ -387,7 +392,7 @@ init python:
 
                     elapsed_time = st - self.cached_time
 
-                    if elapsed_time > 0.0083333: # 120fps
+                    if elapsed_time > self.frame_time:
                         self.x += self.vx
                         self.y += self.vy
                         self.cached_time = st
@@ -1115,6 +1120,7 @@ init python:
                                 continue
 
                     # render note fadeout effects
+                    removed_objects = []
                     for track_idx in self.active_fadeouts_per_track:
                         x_offset = self.track_xoffsets[track_idx]
                         for y_offset, c_time in self.active_fadeouts_per_track[track_idx]:
@@ -1127,19 +1133,25 @@ init python:
                             note_xoffset = x_offset + self.note_xoffset_large
                             note_xoffset = x_offset + ((self.track_bar_width - (self.note_width*self.zoom_scale + self.note_width*self.zoom_scale*new_zoom_scale)) / 2)
                             
-                            alpha_value = 1 - ((elapsed_time / self.fadeout_time) ** 2)
+                            alpha_mult = .1 if persistent.rhythm_dark else 2
+                            alpha_value = 1 - ((elapsed_time / self.fadeout_time) ** alpha_mult)
                             glow_sat_alpha = (1 + (elapsed_time / self.fadeout_time) ** .3) * 5
                             glow_bri_alpha = (elapsed_time / self.fadeout_time) ** .3
 
                             fadeout_drawable = Image(self.note_drawables[track_idx])
-                            glow_effect = im.MatrixColor(fadeout_drawable, im.matrix.saturation(glow_sat_alpha))
-                            glow_effect = im.MatrixColor(glow_effect, im.matrix.brightness(glow_bri_alpha))
+                            glow_effect = Transform(fadeout_drawable)
+                            glow_effect.matrixcolor = BrightnessMatrix(glow_bri_alpha*.3) * SaturationMatrix(glow_sat_alpha*.3)
                             glow_effect = Transform(glow_effect, zoom=self.zoom_scale + new_zoom_scale)
                             glow_effect.alpha = alpha_value
-
                             render.place(glow_effect, x=note_xoffset, y=y_offset)
+                            pass
 
                         self.active_fadeouts_per_track[track_idx] = [tup for tup in self.active_fadeouts_per_track[track_idx] if curr_time-tup[1] < self.fadeout_time]
+
+                    # Cleanup the removed objects
+                    for obj in removed_objects:
+                        # Delete or release any associated resources
+                        del obj  # Or obj.cleanup() or obj.release_resources() depending on the object type
 
                     # handle misses found in get_active_notes_per...
                     if self.miss_track != -1:
@@ -1236,7 +1248,21 @@ init python:
                             # create an effect
                             note_distance_from_top = note_timestamp * self.note_speed
                             y_offset = self.track_bar_height - note_distance_from_top
+
+                            # Remove expired fadeouts
                             self.active_fadeouts_per_track[track_idx].append((y_offset, curr_time))
+
+                            # Add new fadeout
+                            self.active_fadeouts_per_track[track_idx].append((y_offset, curr_time))
+
+                            # # Remove expired fadeouts
+                            # if self.active_fadeouts_per_track[track_idx]:
+                            #     while self.active_fadeouts_per_track[track_idx] and self.active_fadeouts_per_track[track_idx][0][1] < curr_time:
+                            #         self.active_fadeouts_per_track[track_idx] = self.active_fadeouts_per_track[track_idx][1:]
+
+                            # # Add new fadeout
+                            # self.active_fadeouts_per_track[track_idx].append((y_offset, curr_time))
+
 
                             for bark_id in reversed(self.hit_thresholds):
                                 if abs(curr_time - onset) <= self.get_hit_threshold(bark_id):
