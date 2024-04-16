@@ -30,4 +30,4 @@
   <picture><img src="https://h4ckr3m.github.io/NIGHTRAIN/web_files/0w8d+4.jpg"></picture>
 </div>
 
-### Download from the Official Website [HERE](https://h4ckr3m.github.io/NIGHTRAIN/)
+### Download from the Official Website [HERE](https://h4ckr3m.github.io/NIGHTRAIN/) or [dokimods.me](https://dokimods.me/mods/night-rain)
